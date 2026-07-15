@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>นโยบายความเป็นส่วนตัว — UNI Store Order Bot</title>
+<style>
+  :root {
+    --paper: #FAF9F6;
+    --ink: #2A2A28;
+    --ink-soft: #5C5B56;
+    --rule: #DDDAD2;
+    --accent: #3D5A45;
+    --accent-soft: #EDF1EC;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, "Segoe UI", "Noto Sans Thai", "IBM Plex Sans Thai", sans-serif;
+    line-height: 1.7;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 56px 24px 96px;
+  }
+  header {
+    border-bottom: 2px solid var(--ink);
+    padding-bottom: 24px;
+    margin-bottom: 40px;
+  }
+  .eyebrow {
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 600;
+    margin: 0 0 8px;
+  }
+  h1 {
+    font-size: 28px;
+    margin: 0 0 6px;
+    letter-spacing: -0.01em;
+  }
+  .updated {
+    font-size: 14px;
+    color: var(--ink-soft);
+  }
+  .lang-toggle {
+    margin-top: 20px;
+    display: flex;
+    gap: 8px;
+  }
+  .lang-toggle button {
+    font-family: inherit;
+    font-size: 13px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    border: 1px solid var(--rule);
+    background: white;
+    color: var(--ink-soft);
+    cursor: pointer;
+  }
+  .lang-toggle button.active {
+    background: var(--ink);
+    color: white;
+    border-color: var(--ink);
+  }
+  section { margin-bottom: 36px; }
+  h2 {
+    font-size: 17px;
+    margin: 0 0 12px;
+    padding-left: 14px;
+    border-left: 3px solid var(--accent);
+  }
+  p, li { color: var(--ink); font-size: 15.5px; }
+  ul { padding-left: 22px; margin: 8px 0; }
+  li { margin-bottom: 6px; }
+  .box {
+    background: var(--accent-soft);
+    border-radius: 10px;
+    padding: 18px 20px;
+    font-size: 14.5px;
+    color: var(--ink-soft);
+  }
+  .contact {
+    border-top: 1px solid var(--rule);
+    margin-top: 48px;
+    padding-top: 24px;
+    font-size: 14.5px;
+    color: var(--ink-soft);
+  }
+  .contact strong { color: var(--ink); }
+  [data-lang="en"] { }
+  code { background: var(--accent-soft); padding: 1px 6px; border-radius: 4px; font-size: 0.9em; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <p class="eyebrow">Privacy Policy</p>
+    <h1>นโยบายความเป็นส่วนตัว</h1>
+    <p class="updated">ปรับปรุงล่าสุด: 15 กรกฎาคม 2569 (15 July 2026)</p>
+    <div class="lang-toggle">
+      <button type="button" class="active" onclick="setLang('th', this)">ไทย</button>
+      <button type="button" onclick="setLang('en', this)">English</button>
+    </div>
+  </header>
+
+  <!-- ================= ภาษาไทย ================= -->
+  <div data-lang="th">
+
+    <section>
+      <p>UNI Store ("เรา") ให้บริการระบบตรวจจับคอมเม้นสั่งซื้อสินค้าผ่าน Facebook Live และ Facebook Page
+      ("บริการ") นโยบายฉบับนี้อธิบายว่าเราเก็บ ใช้ และดูแลข้อมูลของท่านอย่างไรเมื่อท่านใช้บริการของเรา
+      ผ่านการคอมเม้นหรือส่งข้อความมายัง Facebook Page ของเรา</p>
+    </section>
+
+    <section>
+      <h2>ข้อมูลที่เราเก็บ</h2>
+      <ul>
+        <li>ชื่อบัญชี Facebook และ Page-Scoped ID (PSID) ของท่าน</li>
+        <li>ข้อความคอมเม้นที่ท่านพิมพ์เพื่อสั่งซื้อสินค้า (เช่น รหัสสินค้า ไซส์ จำนวน)</li>
+        <li>ชื่อ-นามสกุล เบอร์โทรศัพท์ และที่อยู่จัดส่งที่ท่านกรอกในแบบฟอร์มยืนยันออเดอร์</li>
+        <li>รูปภาพหลักฐานการชำระเงิน (สลิปโอนเงิน) ที่ท่านอัปโหลด</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>เราใช้ข้อมูลของท่านเพื่ออะไร</h2>
+      <ul>
+        <li>เพื่อสร้างและยืนยันคำสั่งซื้อสินค้าตามที่ท่านคอมเม้น</li>
+        <li>เพื่อส่งข้อความยืนยันออเดอร์และลิงก์แบบฟอร์มกรอกที่อยู่ผ่าน Messenger</li>
+        <li>เพื่อจัดส่งสินค้าไปยังที่อยู่ที่ท่านให้ไว้</li>
+        <li>เพื่อตรวจสอบหลักฐานการชำระเงินและยืนยันความถูกต้องของออเดอร์</li>
+      </ul>
+      <p>เราไม่ใช้ข้อมูลของท่านเพื่อการโฆษณา และไม่นำข้อมูลไปวิเคราะห์พฤติกรรมนอกเหนือจากการดำเนินการตามคำสั่งซื้อ</p>
+    </section>
+
+    <section>
+      <h2>การแชร์ข้อมูลกับบุคคลที่สาม</h2>
+      <p>เรา<strong>ไม่ขาย ไม่เช่า และไม่แลกเปลี่ยน</strong>ข้อมูลส่วนบุคคลของท่านกับบุคคลภายนอกเพื่อวัตถุประสงค์ทางการตลาด
+      ข้อมูลของท่านอาจถูกส่งต่อให้บริษัทขนส่งเท่าที่จำเป็นสำหรับการจัดส่งสินค้าเท่านั้น</p>
+    </section>
+
+    <section>
+      <h2>ระยะเวลาการเก็บข้อมูล</h2>
+      <p>เราเก็บข้อมูลออเดอร์ไว้ตราบเท่าที่จำเป็นสำหรับการดำเนินธุรกิจและตามที่กฎหมายกำหนด
+      (เช่น เพื่อวัตถุประสงค์ทางบัญชี) โดยทั่วไปไม่เกิน 2 ปีนับจากวันที่มีการสั่งซื้อ</p>
+    </section>
+
+    <section>
+      <h2>สิทธิของท่าน</h2>
+      <ul>
+        <li>ขอเข้าถึงข้อมูลส่วนบุคคลที่เราเก็บเกี่ยวกับท่าน</li>
+        <li>ขอให้แก้ไขข้อมูลที่ไม่ถูกต้อง</li>
+        <li>ขอให้ลบข้อมูลของท่านออกจากระบบ</li>
+      </ul>
+      <div class="box">หากต้องการใช้สิทธิดังกล่าว กรุณาติดต่อเราผ่านช่องทางด้านล่าง เราจะดำเนินการภายใน 30 วัน</div>
+    </section>
+
+    <section>
+      <h2>ความปลอดภัยของข้อมูล</h2>
+      <p>เรามีมาตรการป้องกันข้อมูลตามความเหมาะสม เช่น การเข้ารหัส Access Token และการจำกัดสิทธิ์การเข้าถึงข้อมูล
+      เฉพาะบุคคลที่จำเป็นต้องใช้ในการดำเนินธุรกิจเท่านั้น</p>
+    </section>
+
+    <section>
+      <h2>ข้อมูลของผู้เยาว์</h2>
+      <p>บริการนี้ไม่ได้มุ่งเป้าไปที่เด็กอายุต่ำกว่า 13 ปี และเราไม่เก็บข้อมูลจากเด็กอายุต่ำกว่า 13 ปีโดยเจตนา</p>
+    </section>
+
+    <section>
+      <h2>การเปลี่ยนแปลงนโยบาย</h2>
+      <p>เราอาจปรับปรุงนโยบายนี้เป็นครั้งคราว การเปลี่ยนแปลงจะมีผลทันทีเมื่อประกาศบนหน้านี้ พร้อมวันที่ปรับปรุงล่าสุดด้านบน</p>
+    </section>
+
+    <div class="contact">
+      <strong>ติดต่อเรา</strong><br>
+      หากมีคำถามเกี่ยวกับนโยบายความเป็นส่วนตัวนี้ กรุณาติดต่อ:<br>
+      Facebook Page: UNI Store<br>
+      อีเมล: <code>[ใส่อีเมลติดต่อของร้านตรงนี้]</code>
+    </div>
+
+  </div>
+
+  <!-- ================= English ================= -->
+  <div data-lang="en" style="display:none">
+
+    <section>
+      <p>UNI Store ("we", "us") operates an automated order-detection service that reads comments on our
+      Facebook Live broadcasts and Page posts ("the Service"). This policy explains what information we
+      collect, how we use it, and how we protect it when you interact with our Facebook Page.</p>
+    </section>
+
+    <section>
+      <h2>Information We Collect</h2>
+      <ul>
+        <li>Your Facebook name and Page-Scoped ID (PSID)</li>
+        <li>The text of comments you post to place an order (e.g. product code, size, quantity)</li>
+        <li>Your name, phone number, and shipping address, submitted via our order confirmation form</li>
+        <li>Payment proof images (bank transfer slips) that you upload</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>How We Use Your Information</h2>
+      <ul>
+        <li>To create and confirm orders based on your comments</li>
+        <li>To send order confirmations and a link to the address form via Messenger</li>
+        <li>To ship products to the address you provide</li>
+        <li>To verify payment proof and validate order accuracy</li>
+      </ul>
+      <p>We do not use your data for advertising, and we do not analyze your behavior beyond what is
+      necessary to fulfil your order.</p>
+    </section>
+
+    <section>
+      <h2>Sharing With Third Parties</h2>
+      <p>We do <strong>not sell, rent, or trade</strong> your personal data to third parties for marketing
+      purposes. Your information may be shared with shipping carriers only to the extent necessary to
+      deliver your order.</p>
+    </section>
+
+    <section>
+      <h2>Data Retention</h2>
+      <p>We retain order data for as long as necessary for business operations and legal requirements
+      (e.g. accounting purposes), generally not exceeding 2 years from the order date.</p>
+    </section>
+
+    <section>
+      <h2>Your Rights</h2>
+      <ul>
+        <li>Request access to the personal data we hold about you</li>
+        <li>Request correction of inaccurate data</li>
+        <li>Request deletion of your data from our systems</li>
+      </ul>
+      <div class="box">To exercise these rights, please contact us using the details below. We will respond
+      within 30 days.</div>
+    </section>
+
+    <section>
+      <h2>Data Security</h2>
+      <p>We apply reasonable safeguards, including encrypting access tokens and restricting data access to
+      personnel who need it to operate the business.</p>
+    </section>
+
+    <section>
+      <h2>Children's Privacy</h2>
+      <p>This Service is not directed at children under 13, and we do not knowingly collect data from
+      children under 13.</p>
+    </section>
+
+    <section>
+      <h2>Changes to This Policy</h2>
+      <p>We may update this policy from time to time. Changes take effect immediately upon posting, with
+      the "last updated" date revised above.</p>
+    </section>
+
+    <div class="contact">
+      <strong>Contact Us</strong><br>
+      For questions about this Privacy Policy, please contact:<br>
+      Facebook Page: UNI Store<br>
+      Email: <code>[insert your business contact email here]</code>
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+  function setLang(lang, btn) {
+    document.querySelectorAll('[data-lang]').forEach(el => {
+      el.style.display = el.getAttribute('data-lang') === lang ? '' : 'none';
+    });
+    document.querySelectorAll('.lang-toggle button').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+  }
+</script>
+
+</body>
+</html>
